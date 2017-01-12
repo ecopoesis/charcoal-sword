@@ -72,3 +72,11 @@ Network Trash Folder
 Temporary Items
 .apdisk
 
+logs
+target
+/.idea
+/.idea_modules
+/.classpath
+/.project
+/.settings
+/RUNNING_PID

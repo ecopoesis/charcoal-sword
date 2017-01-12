@@ -1,0 +1,25 @@
+@(webJarAssets: WebJarAssets, requireJs: org.webjars.play.RequireJS)
+
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <title>Medford Tax Share</title>
+        <meta name="description" content="Simple map of KC">
+        <meta name="author" content="Jim V">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel='stylesheet' href='@routes.WebJarAssets.at(webJarAssets.locate("css/bootstrap.min.css"))'>
+        @Html(requireJs.setup(routes.Assets.versioned("javascripts/main.js")))
+    </head>
+    <body>
+
+        <div class="container">
+            <div id="main" role="main">
+                <div id="vis"></div>
+            </div>
+        </div>
+    </body>
+</html>
